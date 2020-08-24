@@ -3,7 +3,6 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
-  --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #2f303a;
   --secondary-button-color: #f5f4fa;
   --secondary-address-color: rgba(255, 255, 255, 0.6);
@@ -23,7 +22,16 @@ body {
   padding-right: 20px;
   outline: 2px solid tomato;
 } 
-  
+
+ul, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px
+	
+	}
+	
+  li {
+  list-style: none;
+  }
 
 a {
   text-decoration: none;
@@ -43,9 +51,14 @@ a {
   letter-spacing: 0.03em;
 }
 .logo .dark {
+  margin-bottom: 20px;
+
   color: var(--white-color);
-}
+ }
+
 .logo .light {
+  margin-bottom: 25px;
+
   color: var(--title-text-color);
 }
 
@@ -69,16 +82,24 @@ a {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-contact .link:hover,
-.site-contact .link:focus {
+.site-contact .link:focus,
+.address .link:hover,
+.address .link:focus {
   color: var(--accent-color);
 }
 
 /* Main */
 
+.section {
+padding: 94px 0px;
+}
+
 .section-title {
   color: var(--title-text-color);
 }
 .advantages .section-title {
+  margin bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -91,7 +112,19 @@ a {
   letter-spacing: 0.03em;
 }
 
+.team  .section-title {
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+.works  .section-title {
+margin-top: 20px;
+margin-bottom: 4px;
+}
+
 h2.section-title {
+margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -120,7 +153,11 @@ h2.section-title {
 }
 
 .hero-title {
+margin-top: 0px;
+margin-bottom: 30px;
+
   color: var(--white-color);
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -203,9 +240,5 @@ footer {
 
 .address .link {
   color: var(--secondary-address-color);
-}
-
-.address .link:hover,
-.address .link:focus {
-  color: var(--accent-color);
+  margin: 9px 0px;
 }

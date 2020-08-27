@@ -77,8 +77,8 @@ a {
   
 }
 
-.page-header .line {
-flex-grow: 1;
+.header  {
+
 border-bottom: 1px solid var(--header-border-color);
 }
 

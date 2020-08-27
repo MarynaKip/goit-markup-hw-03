@@ -79,7 +79,7 @@ a {
 
 .page-header .line {
 flex-grow: 1;
-border: 1px solid var(--header-border-color);
+border-bottom: 1px solid var(--header-border-color);
 }
 
 .site-nav {

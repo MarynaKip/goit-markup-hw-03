@@ -6,6 +6,7 @@
   --secondary-bg-color: #2f303a;
   --secondary-button-color: #f5f4fa;
   --secondary-address-color: rgba(255, 255, 255, 0.6);
+  --header-border-color: #ececec;
 }
 
 body {
@@ -45,8 +46,8 @@ a {
 
 /* Logo */
 .logo {
-  min-width: 145;
-  height: 31;
+  min-width: 145px;
+  height: 31px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -71,18 +72,31 @@ a {
 .page-header {
   display: flex;
   align-items: center;
+  
+  
+  
+}
+
+.page-header .line {
+flex-grow: 1;
+border: 1px solid var(--header-border-color);
 }
 
 .site-nav {
+display: flex;
+align-items: center;
+}
+
+.nav-list {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.nav-list .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.nav-list .link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -112,9 +126,9 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link.current,
-.site-nav .link:hover,
-.site-nav .link:focus,
+.nav-list .link.current,
+.nav-list .link:hover,
+.nav-list .link:focus,
 .site-contact .link:hover,
 .site-contact .link:focus,
 .address .link:hover,
@@ -138,7 +152,11 @@ a {
 
 .advantages .item {
   width: calc((100% - (30px * 3)) / 4);
-}
+  }
+  
+  .advantages .item  + .item {
+  margin-left: 30px;
+  }
 
 .advantages .section-title {
   display: inline-block;
@@ -315,6 +333,12 @@ h2.section-title {
 
 footer {
   background-color: var(--secondary-bg-color);
+}
+
+.page-footer {
+padding-top: 60px;
+padding-bottom: 60px;
+
 }
 .address {
   color: var(--white-color);

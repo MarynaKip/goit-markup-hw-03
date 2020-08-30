@@ -46,8 +46,6 @@ a {
 
 /* Logo */
 .logo {
-  min-width: 145px;
-  height: 31px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -72,19 +70,15 @@ a {
 .page-header {
   display: flex;
   align-items: center;
-  
-  
-  
 }
 
-.header  {
-
-border-bottom: 1px solid var(--header-border-color);
+.header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .site-nav {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -152,11 +146,11 @@ align-items: center;
 
 .advantages .item {
   width: calc((100% - (30px * 3)) / 4);
-  }
-  
-  .advantages .item  + .item {
+}
+
+.advantages .item + .item {
   margin-left: 30px;
-  }
+}
 
 .advantages .section-title {
   display: inline-block;
@@ -336,9 +330,8 @@ footer {
 }
 
 .page-footer {
-padding-top: 60px;
-padding-bottom: 60px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   color: var(--white-color);

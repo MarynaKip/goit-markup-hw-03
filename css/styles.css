@@ -34,6 +34,10 @@ h2 {
     letter-spacing: 0.02em;
 }
 
+img {
+    display: block
+}
+
 .link {
     font-family: Roboto;
     font-weight: Regular;
@@ -73,17 +77,18 @@ address {
     justify-content: space-between;
     align-items: center;
     height: 72px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 452px;
+    align-items: center;
 }
 
 .navigation-list {
     display: flex;
-    gap: 39px;
+    gap: 40px;
 }
 
 .navigation-logo {
@@ -94,7 +99,8 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    align-self: center
+    align-self: center;
+    margin-right: 76px;
 }
 
 .navigation-logo-accent {
@@ -117,6 +123,7 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding: 24px 0;
 }
 
 .navigation-link:hover,
@@ -143,9 +150,14 @@ address {
     color: #404bbf;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px
+}
+
 .banner {
     background-color:  #2e2f42;
-    height: 600px;
+    padding: 188px 0;
 }
 
 .banner-container {
@@ -161,8 +173,7 @@ address {
     line-height: 1.07;
     text-align: center;
     color: #ffffff;
-    margin: 0;
-    padding-top: 188px;
+    max-width: 496px
 }
 
 .banner-button {
@@ -175,7 +186,9 @@ address {
     cursor: pointer;
     color: #ffffff;
     margin-top: 50px;    
-    width: 169px;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px; 
     height: 56px;
     
 }

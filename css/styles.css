@@ -80,6 +80,11 @@ address {
     border-bottom: 1px solid #e7e9fc
 }
 
+.header-container {
+    justify-content: space-between;
+    padding-top: 22px;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -202,9 +207,17 @@ address {
     padding: 120px 0;
 }
 
+.goals-header {
+    visibility: hidden;
+}
+
 .goals-list {
     display: flex;
     gap: 24px;
+}
+
+.goals-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .goals-list-header {
@@ -214,7 +227,7 @@ address {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 0;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 
 .goals-list-text {
@@ -227,9 +240,14 @@ address {
 
 .team {
     background-color: #F4F4FD;
-    display: block;
     padding: 120px 0;
 }
+
+.team-container {
+    display: block;
+
+}
+
 .team-header {
     font-size: 36px;
     line-height: 1.11;
@@ -237,17 +255,24 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 76px;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
     gap: 24px;
 }
+
+.team-description {
+    padding: 32px 0;
+}
+
 .team-list-item {
     background-color: #FFFFFF;
-    width: 264px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
+
 .team-list-header {
     font-family: Roboto;
     font-weight: 500;
@@ -255,16 +280,20 @@ address {
     letter-spacing: 0.02em;
     line-height: 1.2;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
+
 .team-list-text {
     font-size: 16px;
+    text-align: center;
 }
 
 .portfolio {
     display: block;
     padding: 120px 0;
-
 }
+
 .portfolio-header {
     font-size: 36px;
     line-height: 1.11;
@@ -272,16 +301,27 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 }
+
 .portfolio-list {
     display: flex;
-    gap: 48px 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     flex-wrap: wrap;
 }
-/* .portfolio-list-item {
+.portfolio-list-item {
+     width: calc((100% - 48px) / 3); 
 }
-.portfolio-list-image {
+
+.portfolio-item-description {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+
+}
+/* .portfolio-list-image {
 }
 .portfolio-list-text {
 }
@@ -312,12 +352,14 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:  #4d5ae5;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
+
 .footer-logo-accent {
     color: #f4f4fd;
-
 }
+
 .footer-text {
     color: #F4F4FD;
     width: 264px;

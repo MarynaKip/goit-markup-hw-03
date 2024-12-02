@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <nav class="navigation">
                 <a href="./index.html" class="navigation-logo">Web<span class="navigation-logo-accent">Studio</span></a>
                 <ul class="navigation-list">
@@ -38,95 +38,121 @@
                 <button type="button" class="banner-button">Order Service</button>    
             </div>
         </section>
-        <section class="goals container">
-            <!-- <h2 class="goals-header"></h2> -->
-            <ul class="goals-list">
-                <li>
-                    <h3 class="goals-list-header">
-                        Strategy 
-                    </h3>
-                <p class="goals-list-text">Our goal is to identify the business
-                    problem to walk away with the perfect and creative solution. </p>
-                </li>
-                <li>
-                    <h3 class="goals-list-header">
-                        Punctuality
-                    </h3>
-                <p class="goals-list-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3 class="goals-list-header">
-                        Diligence
-                    </h3>
-                <p class="goals-list-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                </li>
-                <li>
-                    <h3 class="goals-list-header">
-                        Technologies 
-                    </h3>
-                <p class="goals-list-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                </li>
-            </ul>
+        <section class="goals">
+            <div class="container">
+                <h2 class="goals-header"></h2>
+                <ul class="goals-list">
+                    <li class="goals-item">
+                        <h3 class="goals-list-header">
+                            Strategy 
+                        </h3>
+                        <p class="goals-list-text">Our goal is to identify the business
+                        problem to walk away with the perfect and creative solution. </p>
+                    </li>
+                    <li class="goals-item">
+                        <h3 class="goals-list-header">
+                            Punctuality
+                        </h3>
+                        <p class="goals-list-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    </li>
+                    <li class="goals-item">
+                        <h3 class="goals-list-header">
+                            Diligence
+                        </h3>
+                        <p class="goals-list-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                    </li>
+                    <li class="goals-item">
+                        <h3 class="goals-list-header">
+                            Technologies 
+                        </h3>
+                        <p class="goals-list-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="container team ">
-            <h2 class="team-header">Our Team</h2>
-            <ul class="team-list">
-                <li class="team-list-item">
-                    <img class="team-list-image" src="./images/mark_guerrero.jpg" alt="man with dark hair" width="264"/>
-                    <h3 class="team-list-header">Mark Guerrero</h3>
-                    <p class="team-list-text">Product Designer</p>
-                </li>
-                <li class="team-list-item">
-                    <img class="team-list-image" src="./images/tom_ford.jpg" alt="lady with dark hair" width="264"/>
-                    <h3 class="team-list-header">Tom Ford</h3>
-                    <p class="team-list-text">Frontend Developer</p>
-                </li>
-                <li class="team-list-item">
-                    <img class="team-list-image" src="./images/camila_garcia.jpg" alt="man with blond hair" width="264"/>
-                    <h3 class="team-list-header">Camila Garcia</h3>
-                    <p class="team-list-text">Marketing</p>
-                </li>
-                <li class="team-list-item">
-                    <img class="team-list-image" src="./images/daniel_wilson.jpg" alt="man with dark hair" width="264"/>
-                    <h3 class="team-list-header">Daniel Wilson</h3>
-                    <p class="team-list-text">UI Designer</p>
-                </li>
-            </ul>
+        <section class="team ">
+            <div class="container team-container">
+                <h2 class="team-header">Our Team</h2>
+                <ul class="team-list">
+                    <li class="team-list-item">
+                        <img class="team-list-image" src="./images/mark_guerrero.jpg" alt="man with dark hair" width="264"/>
+                        <div class="team-description">
+                            <h3 class="team-list-header">Mark Guerrero</h3>
+                            <p class="team-list-text">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="team-list-item">
+                        <img class="team-list-image" src="./images/tom_ford.jpg" alt="lady with dark hair" width="264"/>
+                        <div class="team-description">
+                            <h3 class="team-list-header">Tom Ford</h3>
+                            <p class="team-list-text">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="team-list-item">
+                        <img class="team-list-image" src="./images/camila_garcia.jpg" alt="man with blond hair" width="264"/>
+                        <div class="team-description">
+                            <h3 class="team-list-header">Camila Garcia</h3>
+                            <p class="team-list-text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="team-list-item">
+                        <img class="team-list-image" src="./images/daniel_wilson.jpg" alt="man with dark hair" width="264"/>
+                        <div class="team-description">
+                            <h3 class="team-list-header">Daniel Wilson</h3>
+                            <p class="team-list-text">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="portfolio container">
+        <section>
+            <div class="container portfolio">
             <h2 class="portfolio-header">Our Portfolio</h2>
             <ul class="portfolio-list">
                 <li class="portfolio-list-item">
                     <img class="portfolio-list-image" src="./images/banking_app.jpg" alt="app" width="360"/>
-                     <h3 class="portfolio-list-header">Banking App</h3>
-                    <p class="portfolio-list-text">App</p>
+                    <div class="portfolio-item-description">
+                        <h3 class="portfolio-list-header">Banking App</h3>
+                        <p class="portfolio-list-text">App</p>
+                </div>
                 </li>
                 <li class="portfoli-list-item">
                     <img class="portfolio-list-image" src="./images/cashless_payment.jpg" alt="payment by phone" width="360"/>
-                    <h3  class="portfolio-list-header">Cashless Payment</h3>
-                    <p class="portfolio-list-text">Marketing</p>
+                    <div class="portfolio-item-description">
+                        <h3  class="portfolio-list-header">Cashless Payment</h3>
+                        <p class="portfolio-list-text">Marketing</p>
+                </div>
                 </li>
                 <li class="portfoli-list-item">
                     <img class="portfolio-list-image" src="./images/meditation_app.jpg" alt="laptop" width="360"/>
-                    <h3 class="portfolio-list-header">Meditation App</h3>
-                    <p class="portfolio-list-text">App</p>
+                    <div class="portfolio-item-description">
+                        <h3 class="portfolio-list-header">Meditation App</h3>
+                        <p class="portfolio-list-text">App</p>
+                </div>
                 </li>
                 <li class="portfoli-list-item">
                     <img class="portfolio-list-image" src="./images/taxi_service.jpg" alt="car" width="360"/>
-                    <h3 class="portfolio-list-header">Taxi Service</h3>
-                    <p class="portfolio-list-text">Marketing</p>
+                    <div class="portfolio-item-description">
+                        <h3 class="portfolio-list-header">Taxi Service</h3>
+                        <p class="portfolio-list-text">Marketing</p>
+                </div>
                 </li>
                 <li class="portfoli-list-item">
                     <img class="portfolio-list-image" src="./images/screen_illustrations.jpg" alt="phone" width="360"/>
-                    <h3 class="portfolio-list-header">Screen Illustrations</h3>
-                    <p class="portfolio-list-text">Design</p>
+                    <div class="portfolio-item-description">
+                        <h3 class="portfolio-list-header">Screen Illustrations</h3>
+                        <p class="portfolio-list-text">Design</p>
+                </div>
                 </li>
                 <li class="portfoli-list-item">
                     <img class="portfolio-list-image" src="./images/online_courses.jpg" alt="woman" width="360"/>
-                    <h3 class="portfolio-list-header">Online Courses</h3>
-                    <p class="portfolio-list-text">Marketing</p>
+                    <div class="portfolio-item-description">
+                        <h3 class="portfolio-list-header">Online Courses</h3>
+                        <p class="portfolio-list-text">Marketing</p>
+                </div>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <footer class="footer">

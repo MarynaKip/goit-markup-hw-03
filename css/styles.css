@@ -60,8 +60,12 @@ img {
 .container {
     width: 1158px;
     margin: 0 auto;
-    display: flex;
+    /* display: flex; */
     padding: 0 15px 0 15px;
+}
+
+.section-container {
+    display: block;
 }
 
 address {
@@ -81,6 +85,7 @@ address {
 }
 
 .header-container {
+    display: flex;
     justify-content: space-between;
     padding-top: 22px;
 }
@@ -166,6 +171,7 @@ address {
 }
 
 .banner-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -178,7 +184,7 @@ address {
     line-height: 1.07;
     text-align: center;
     color: #ffffff;
-    max-width: 496px
+    max-width: 496px;
 }
 
 .banner-button {
@@ -195,7 +201,6 @@ address {
     border: none;
     border-radius: 4px; 
     height: 56px;
-    
 }
 
 .banner-button:hover,
@@ -253,11 +258,6 @@ address {
     padding: 120px 0;
 }
 
-.team-container {
-    display: block;
-
-}
-
 .team-header {
     font-size: 36px;
     line-height: 1.11;
@@ -297,10 +297,6 @@ address {
 .team-list-text {
     font-size: 16px;
     text-align: center;
-}
-
-.portfolio-container {
-    display: block;
 }
 
 .portfolio {
@@ -354,9 +350,6 @@ address {
     padding: 100px 0;
 }
 
-.footer-container {
-    display: block;
-}
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;

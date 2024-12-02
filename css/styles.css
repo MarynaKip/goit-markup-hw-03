@@ -81,13 +81,13 @@ address {
     justify-content: space-between;
     align-items: center;
     height: 72px;
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+    padding-top: 22px;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 22px;
 }
 
 .navigation {
